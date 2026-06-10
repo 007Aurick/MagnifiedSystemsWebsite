@@ -22,7 +22,7 @@ const navItems = [
 
 const navContent = [
 
-  { to: '/contact', label: '📩 Contact' },
+  { to: '/contact', label: 'Contact', cta: true },
 
 ];
 
@@ -105,7 +105,7 @@ const Navbar = () => {
 
         <div className="nav-content">
 
-          {navContent.map(({ to, label }) => (
+          {navContent.map(({ to, label, cta }) => (
 
             <Link
 
@@ -113,7 +113,7 @@ const Navbar = () => {
 
               to={to}
 
-              className={`nav-link ${isLinkActive(location.pathname, to) ? 'active' : ''}`}
+              className={cta ? 'nav-cta' : `nav-link ${isLinkActive(location.pathname, to) ? 'active' : ''}`}
 
               onClick={closeMobileMenu}
 

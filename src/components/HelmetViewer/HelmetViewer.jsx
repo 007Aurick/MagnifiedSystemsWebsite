@@ -8,9 +8,9 @@ import './HelmetViewer.css';
 
 const TOGGLES = [
   { id: 'off', label: 'Off' },
-  { id: 'green', label: 'Green' },
-  { id: 'yellow', label: 'Yellow' },
-  { id: 'red', label: 'Red' },
+  { id: 'low', label: 'Low' },
+  { id: 'moderate', label: 'Moderate' },
+  { id: 'high', label: 'High' },
 ];
 
 const HelmetViewer = () => {

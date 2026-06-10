@@ -6,9 +6,9 @@ import * as THREE from 'three';
 useGLTF.preload('/models/helmet.glb');
 
 const PULSE_COLORS = {
-  green: '#00ffd1',
-  yellow: '#f5c542',
-  red: '#ff4d5a',
+  low: '#0d9488',
+  moderate: '#d97706',
+  high: '#dc2626',
 };
 
 const FIT_PADDING = 0.04;
@@ -82,7 +82,7 @@ function ImpactPulse({ level }) {
 
   useFrame((state) => {
     if (!group.current) return;
-    const active = level !== 'off';
+    const active = level !== 'off' && PULSE_COLORS[level];
     group.current.visible = active;
     if (!active) return;
 
@@ -97,10 +97,10 @@ function ImpactPulse({ level }) {
     });
   });
 
-  const color = PULSE_COLORS[level] || PULSE_COLORS.green;
+  const color = PULSE_COLORS[level] || PULSE_COLORS.low;
 
   return (
-    <group ref={group} visible={level !== 'off'}>
+    <group ref={group} visible={level !== 'off' && Boolean(PULSE_COLORS[level])}>
       {[0, 1, 2, 3].map((i) => (
         <mesh
           key={i}
@@ -170,7 +170,7 @@ function HelmetModel({ level, helmetRef }) {
     }
 
     const pulse = (Math.sin(state.clock.elapsedTime * 7) + 1) * 0.5;
-    const hex = PULSE_COLORS[level];
+    const hex = PULSE_COLORS[level] || PULSE_COLORS.low;
     materials.forEach((mat) => {
       if (mat.emissive) {
         mat.emissive.set(hex);

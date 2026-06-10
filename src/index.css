@@ -9,23 +9,33 @@
 :root {
   --font-body: 'Inter', system-ui, sans-serif;
   --font-display: 'Rajdhani', system-ui, sans-serif;
-  --impact-yellow: #f5c542;
-  --impact-red: #ff4d5a;
-  --bg: #1c1c1e;
-  --bg-elevated: #252528;
-  --text: #ffffff;
-  --text-muted: #9a9aa3;
-  --border: #3a3a3f;
-  --green: #00ffd1;
-  --green-hover: #33ffe0;
-  --green-dark: #00ffd1;
-  --green-soft: rgba(0, 255, 209, 0.1);
-  --green-border: rgba(0, 255, 209, 0.35);
-  --on-accent: #050505;
-  --accent-glow: rgba(0, 255, 209, 0.15);
-  --error-border: rgba(248, 113, 113, 0.45);
-  --error-bg: rgba(127, 29, 29, 0.35);
-  --error-text: #fca5a5;
+  --impact-yellow: #d97706;
+  --impact-red: #dc2626;
+  --bg: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-elevated: #ffffff;
+  --text: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent-soft: rgba(13, 148, 136, 0.08);
+  --accent-border: rgba(13, 148, 136, 0.28);
+  --green: #0d9488;
+  --green-hover: #0f766e;
+  --green-dark: #0d9488;
+  --green-soft: rgba(13, 148, 136, 0.08);
+  --green-border: rgba(13, 148, 136, 0.28);
+  --on-accent: #ffffff;
+  --accent-glow: rgba(13, 148, 136, 0.15);
+  --gradient-brand: linear-gradient(135deg, #0284c7 0%, #0d9488 55%, #2563eb 100%);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --error-border: rgba(220, 38, 38, 0.35);
+  --error-bg: rgba(254, 226, 226, 0.6);
+  --error-text: #b91c1c;
 }
 
 body {
@@ -34,6 +44,18 @@ body {
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -50,6 +72,7 @@ body {
   padding: 6rem 1.5rem 4rem;
   text-align: center;
   background: var(--bg);
+  flex: 1;
 }
 
 .page-placeholder h1 {
@@ -69,6 +92,4 @@ body {
   height: 2.75rem;
   object-fit: contain;
   flex-shrink: 0;
-  mix-blend-mode: lighten;
-  filter: drop-shadow(0 0 6px var(--accent-glow));
 }
