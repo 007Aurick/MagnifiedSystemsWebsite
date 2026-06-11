@@ -6,7 +6,8 @@ export const progressIntro = {
 
 /**
  * Edit titles, dates, and descriptions below.
- * Videos live in /public — use the .mp4 web versions (not the large .mov originals).
+ * Local clips: set `video` to a path in /public (use .mp4, not .mov).
+ * YouTube clips: set `youtube` to the video ID instead of `video`.
  */
 export const progressReel = [
   {
@@ -27,7 +28,8 @@ export const progressReel = [
     id: 'video-3',
     title: 'April 24th, 2026',
     date: '',
-    video: '/Video3.mp4',
+    youtube: 'zTwM6Pv0gUk',
+    short: true,
     description: 'Built a Severity Score algorithm with ESP32 and C++.',
   },
   {

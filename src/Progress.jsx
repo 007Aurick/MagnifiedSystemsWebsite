@@ -27,17 +27,33 @@ const Progress = () => (
                 {entry.date ? <time className="progress-timeline__date">{entry.date}</time> : null}
               </header>
 
-              <div className="progress-timeline__media">
-                <video
-                  className="progress-timeline__video"
-                  controls
-                  playsInline
-                  preload="metadata"
-                  aria-label={`${entry.title} progress clip`}
-                >
-                  <source src={entry.video} type="video/mp4" />
-                  Your browser does not support this video format.
-                </video>
+              <div
+                className={`progress-timeline__media${
+                  entry.short ? ' progress-timeline__media--short' : ''
+                }`}
+              >
+                {entry.youtube ? (
+                  <div className="progress-timeline__embed">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${entry.youtube}`}
+                      title={`${entry.title} progress clip`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <video
+                    className="progress-timeline__video"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    aria-label={`${entry.title} progress clip`}
+                  >
+                    <source src={entry.video} type="video/mp4" />
+                    Your browser does not support this video format.
+                  </video>
+                )}
               </div>
 
               <p className="progress-timeline__description">{entry.description}</p>
