@@ -1,0 +1,40 @@
+export const progressIntro = {
+  kicker: 'Magnified Systems',
+  title: 'Progress',
+  lead: 'A reel of builds, tests, and milestones as we develop wearable impact monitoring.',
+};
+
+/**
+ * Edit titles, dates, and descriptions below.
+ * Videos live in /public — paths start with /Video1.mov, etc.
+ */
+export const progressReel = [
+  {
+    id: 'video-1',
+    title: 'March 10th, 2026',
+    date: '',
+    video: '/Video1.mov',
+    description: 'What are device is.'
+  },
+  {
+    id: 'video-2',
+    title: 'March 20th, 2026',
+    date: '',
+    video: '/Video2.mov',
+    description: 'Built a Machine Learning model to predict impact severity.',
+  },
+  {
+    id: 'video-3',
+    title: 'April 24th, 2026',
+    date: '',
+    video: '/Video3.mov',
+    description: 'Built a Severity Score algorithm with ESP32 and C++.',
+  },
+  {
+    id: 'video-4',
+    title: 'May 15th, 2026',
+    date: '',
+    video: '/Video4.mov',
+    description: 'Designed and built a CAD model with SOLIDWORKS.',
+  },
+];
