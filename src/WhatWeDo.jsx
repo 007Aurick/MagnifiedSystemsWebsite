@@ -76,7 +76,7 @@ const WhatWeDo = () => (
           <img
             className="wwd-impact__device"
             src="/images/impact-sensor-helmet.png"
-            alt="Sensor module mounted on a helmet with cyan waveform and red, yellow, and green LED indicators"
+            alt="Motorcycle helmet with impact sensor showing cyan waveform and red, yellow, and green LED indicators"
             loading="lazy"
           />
         </div>
