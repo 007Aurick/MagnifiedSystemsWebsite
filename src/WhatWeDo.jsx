@@ -48,6 +48,9 @@ const WhatWeDo = () => (
     </section>
 
     <section className="wwd-impact" aria-labelledby="wwd-impact-heading">
+      <div className="wwd-impact__helmet" aria-hidden>
+        <img src="/images/impact-helmet-photo.png" alt="" loading="lazy" />
+      </div>
       <div className="wwd-impact__inner wwd-inner">
         <div className="wwd-impact__copy">
           <p className="wwd-impact__kicker">Impact Level Indicator</p>
@@ -70,15 +73,6 @@ const WhatWeDo = () => (
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="wwd-impact__visual">
-          <img
-            className="wwd-impact__device"
-            src="/images/impact-sensor-helmet.png"
-            alt="Motorcycle helmet with impact sensor showing cyan waveform and red, yellow, and green LED indicators"
-            loading="lazy"
-          />
         </div>
       </div>
     </section>

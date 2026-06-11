@@ -4,7 +4,7 @@ export const teamMembers = [
     name: 'Aurick Anwar',
     image: '/Aurick.jpg',
     job_title: 'Founding Engineer',
-    program_degree: 'Mechatronics Engineering at McMaster University',
+    program_degree: 'Engineering Physics at McMaster University',
     
     github: 'https://github.com/AurickAnwar',
     linkedin: 'https://www.linkedin.com/in/aurick-anwar/',
