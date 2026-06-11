@@ -35,8 +35,7 @@ const Progress = () => (
                   preload="metadata"
                   aria-label={`${entry.title} progress clip`}
                 >
-                  <source src={entry.video} type="video/quicktime" />
-                  <source src={entry.video} />
+                  <source src={entry.video} type="video/mp4" />
                   Your browser does not support this video format.
                 </video>
               </div>

@@ -6,35 +6,35 @@ export const progressIntro = {
 
 /**
  * Edit titles, dates, and descriptions below.
- * Videos live in /public — paths start with /Video1.mov, etc.
+ * Videos live in /public — use the .mp4 web versions (not the large .mov originals).
  */
 export const progressReel = [
   {
     id: 'video-1',
     title: 'March 10th, 2026',
     date: '',
-    video: '/Video1.mov',
+    video: '/Video1.mp4',
     description: 'What are device is.'
   },
   {
     id: 'video-2',
     title: 'March 20th, 2026',
     date: '',
-    video: '/Video2.mov',
+    video: '/Video2.mp4',
     description: 'Built a Machine Learning model to predict impact severity.',
   },
   {
     id: 'video-3',
     title: 'April 24th, 2026',
     date: '',
-    video: '/Video3.mov',
+    video: '/Video3.mp4',
     description: 'Built a Severity Score algorithm with ESP32 and C++.',
   },
   {
     id: 'video-4',
     title: 'May 15th, 2026',
     date: '',
-    video: '/Video4.mov',
+    video: '/Video4.mp4',
     description: 'Designed and built a CAD model with SOLIDWORKS.',
   },
 ];
