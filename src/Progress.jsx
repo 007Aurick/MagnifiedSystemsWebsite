@@ -27,11 +27,7 @@ const Progress = () => (
                 {entry.date ? <time className="progress-timeline__date">{entry.date}</time> : null}
               </header>
 
-              <div
-                className={`progress-timeline__media${
-                  entry.short ? ' progress-timeline__media--short' : ''
-                }`}
-              >
+              <div className="progress-timeline__media">
                 {entry.youtube ? (
                   <div className="progress-timeline__embed">
                     <iframe

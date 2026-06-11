@@ -122,23 +122,21 @@
   box-shadow: var(--shadow-md);
 }
 
-.progress-timeline__video {
+.progress-timeline__video,
+.progress-timeline__embed {
   display: block;
   width: 100%;
+  height: min(70vh, 520px);
   max-height: min(70vh, 520px);
-  vertical-align: middle;
   background: #000000;
 }
 
-.progress-timeline__media--short {
-  max-width: 320px;
+.progress-timeline__video {
+  object-fit: contain;
 }
 
 .progress-timeline__embed {
   position: relative;
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  background: #000000;
 }
 
 .progress-timeline__embed iframe {

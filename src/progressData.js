@@ -29,7 +29,6 @@ export const progressReel = [
     title: 'April 24th, 2026',
     date: '',
     youtube: 'zTwM6Pv0gUk',
-    short: true,
     description: 'Built a Severity Score algorithm with ESP32 and C++.',
   },
   {
