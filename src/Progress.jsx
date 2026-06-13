@@ -5,11 +5,24 @@ import './Progress.css';
 const Progress = () => (
   <div className="progress-page">
     <section className="progress-hero progress-inner" aria-labelledby="progress-heading">
-      <p className="progress-kicker">{progressIntro.kicker}</p>
-      <h1 id="progress-heading" className="progress-title">
-        {progressIntro.title}
-      </h1>
-      <p className="progress-lead">{progressIntro.lead}</p>
+      <div className="progress-hero__layout">
+        <div className="progress-hero__copy">
+          <p className="progress-kicker">{progressIntro.kicker}</p>
+          <h1 id="progress-heading" className="progress-title">
+            {progressIntro.title}
+          </h1>
+          <p className="progress-lead">{progressIntro.lead}</p>
+        </div>
+
+        <a
+          className="progress-instagram-btn"
+          href={progressIntro.instagramReelsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View reels on Instagram
+        </a>
+      </div>
     </section>
 
     <section className="progress-timeline-section progress-inner" aria-label="Progress reel timeline">

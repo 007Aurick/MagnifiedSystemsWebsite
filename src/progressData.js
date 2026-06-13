@@ -2,6 +2,7 @@ export const progressIntro = {
   kicker: 'Magnified Systems',
   title: 'Progress',
   lead: 'A reel of builds, tests, and milestones as we develop wearable impact monitoring.',
+  instagramReelsUrl: 'https://www.instagram.com/magnifiedsystems/reels/',
 };
 
 /**
